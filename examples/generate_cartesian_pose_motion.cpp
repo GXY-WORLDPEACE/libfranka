@@ -20,6 +20,9 @@ int main(int argc, char** argv) {
     std::cerr << "Usage: " << argv[0] << " <robot-hostname>" << std::endl;
     return -1;
   }
+
+
+  
   try {
     franka::Robot robot(argv[1]);
     setDefaultBehavior(robot);
